@@ -370,7 +370,8 @@ p {
 .side-bar .skill-bar .work-skill .javascript-skill span,
 .side-bar .skill-bar .work-skill .jquery-skill span,
 .side-bar .skill-bar .work-skill .php-skill span,
-.side-bar .skill-bar .work-skill .wordpress-skill span {
+.side-bar .skill-bar .work-skill .wordpress-skill span,
+.side-bar .skill-bar .work-skill .mysql-skill span{
   position: absolute;
   bottom: 1.8rem;
   left: 0;
