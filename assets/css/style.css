@@ -359,7 +359,8 @@ p {
 .side-bar .skill-bar .work-skill .javascript-skill,
 .side-bar .skill-bar .work-skill .jquery-skill,
 .side-bar .skill-bar .work-skill .php-skill,
-.side-bar .skill-bar .work-skill .wordpress-skill {
+.side-bar .skill-bar .work-skill .wordpress-skill,
+.side-bar .skill-bar .work-skill .mysql-skill{
   position: relative;
   margin-bottom: 2rem;
 }
