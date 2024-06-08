@@ -417,13 +417,6 @@ p {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.side-bar .cv-download button:hover a {
-  color:#fff;
-{
-.side-bar .cv-download button a:hover {
-  color:#fff;
-{
-
 .side-bar .cv-download button i {
   padding-left: 0.5rem;
 }
@@ -431,6 +424,12 @@ p {
 .side-bar .cv-download button:hover {
   color: #fff;
 }
+.side-bar .cv-download button:hover a {
+  color:#fff;
+{
+.side-bar .cv-download button a:hover {
+  color:#fff;
+{
 
 .side-bar .social-link {
   position: absolute;
