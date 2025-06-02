@@ -50,7 +50,7 @@ $(document).ready(function(){
       bar.setText(Math.round(bar.value() * 100) + ' %');
     }
   });
-  bar.animate(.90); 
+  bar.animate(.80); 
 
   var bar = new ProgressBar.Circle('.progress-bangla', {
     strokeWidth: 5,
@@ -76,7 +76,7 @@ $(document).ready(function(){
       bar.setText(Math.round(bar.value() * 100) + ' %');
     }
   });
-  bar.animate(.70); 
+  bar.animate(.60); 
 
   // Skill-bar
   // html
@@ -351,7 +351,7 @@ Scrollbar.init(document.querySelector('.content-banner'), {
 
 // Typing js
 var typed = new Typed('#typed', {
-  strings: ['Business Website.', 'Educational Website.','E-comus Website','.Newspaper Website'],
+  strings: ['Custom Theme Development', 'Elementor Customize.','Woocommerce Store.','Seo Optimization.'],
   smartBackspace: true,
   loop:true,
   fadeOutDelay: 500,

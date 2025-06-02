@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,21 +16,12 @@
     <!-- Fancybox -->
     <link rel="stylesheet" href="assets/css/fancybox.css" />
     <!-- style css -->
-    <link
-      rel="stylesheet"
-      href="assets/css/style.css"
-      type="text/css"
-      media="all"
-    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
     <!-- Responsive css -->
-    <link
-      rel="stylesheet"
-      href="assets/css/responsive.css"
-      type="text/css"
-      media="all"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+</head>
+
+<body>
     <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
@@ -38,1335 +30,1023 @@
     </div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "109178250635289");
-      chatbox.setAttribute("attribution", "biz_inbox");
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "109178250635289");
+        chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!-- Your SDK code -->
     <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v14.0'
+            });
+        };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
     <!-- Min-wrapper -->
     <div class="min-wrapper">
-      <div class="wrapper">
-        <!-- Side-bar -->
-        <div class="side-bar" id="side-bar">
-          <!-- toggle-bar -->
-          <div class="toggle-bar" id="toggler-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="sidebar-top">
-            <div class="profile-img">
-              <a href="assets/images/me.png" data-fancybox="galleryMe"
-                ><img src="assets/images/me.png" alt="assets/images/me.png" />
-                <div class="hover-zome">
-                  <i class="fa-solid fa-expand"></i>
+        <div class="wrapper">
+            <!-- Side-bar -->
+            <div class="side-bar" id="side-bar">
+                <!-- toggle-bar -->
+                <div class="toggle-bar" id="toggler-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-              </a>
-            </div>
-            <h4>Gouranga Roy</h4>
-            <span>Front-end Developer And Programmer...) </span>
-          </div>
-          <!-- Skill-bar -->
-          <div class="skill-bar">
-            <div class="address-table">
-              <ul>
-                <li>
-                  <h6>Residence:</h6>
-                  <span>Bangladesh</span>
-                </li>
-                <li>
-                  <h6>City:</h6>
-                  <span>Thakurgaon</span>
-                </li>
-                <li>
-                  <h6>Age:</h6>
-                  <span>22</span>
-                </li>
-              </ul>
-            </div>
-            <div class="ls-divider"></div>
-            <!-- Language skill -->
-            <div class="language-skill">
-              <div class="progress-one">
-                <div class="progress-english"></div>
-                <span>English</span>
-              </div>
-              <div class="progress-tow">
-                <div class="progress-bangla"></div>
-                <span>France</span>
-              </div>
-              <div class="progress-three">
-                <div class="progress-outhers"></div>
-                <span>Outhers</span>
-              </div>
-            </div>
-            <div class="ls-divider"></div>
-            <!-- work-skill -->
-            <div class="work-skill">
-              <div class="html-skill">
-                <span>Html</span>
-                <div class="html"></div>
-              </div>
-              <div class="css-skill">
-                <span>Css</span>
-                <div class="css"></div>
-              </div>
-              <div class="javascript-skill">
-                <span>Javascript</span>
-                <div class="javascript"></div>
-              </div>
-              <div class="jquery-skill">
-                <span>Jquery</span>
-                <div class="jquery"></div>
-              </div>
-              <div class="php-skill">
-                <span>Php</span>
-                <div class="php"></div>
-              </div>
-              <div class="wordpress-skill">
-                <span>Wordpress</span>
-                <div class="wordpress"></div>
-              </div>
-              <div class="mysql-skill">
-                <span>MySQL</span>
-                <div class="mysql"></div>
-              </div>
-            </div>
-            <div class="ls-divider"></div>
-            <!-- Coding-language -->
-            <div class="coding-language">
-              <ul>
-                <li><i class="fa-solid fa-check"></i> Html, Css, Sass</li>
-                <li><i class="fa-solid fa-check"></i> Javascript, Jquery</li>
-                <li>
-                  <i class="fa-solid fa-check"></i> Bootstrap, Materialize
-                </li>
-                <li>
-                  <i class="fa-solid fa-check"></i> Wordpress Customization
-                </li>
-                <li><i class="fa-solid fa-check"></i> Git Knowledge</li>
-              </ul>
-            </div>
-            <div class="ls-divider"></div>
-            <!-- Cv-download -->
-            <div class="cv-download">
-              <button><a href="https://drive.google.com/file/d/1E4vIwOfyHSyIAaySfD-cHiMXmeevNEsL/view?usp=sharing" target="_blank">Download Cv <i class="fa-solid fa-download"></i></a></button>
-            </div>
-          </div>
-          <div class="social-link">
-            <a href="https://bit.ly/3zpwfAx" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://bit.ly/3PCO5p8" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-google"></i></a>
-            <a href="#"><i class="fa-brands fa-behance"></i></a>
-            <a href="https://github.com/gouranga-roy" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://bit.ly/3aVzXIK" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-        </div>
-        <!-- Min-content -->
-        <div class="min-content">
-          <!-- Banner-area -->
-          <div class="content-banner">
-            <div class="banner-minContent">
-              <!-- Banner-header -->
-              <header class="banner-header">
-                <div class="container-fluid">
-                  <div class="row align-items-center">
-                    <div class="col-xl-8 col-lg-12">
-                      <div class="banner-caption">
-                        <div class="tablet-device-profile">
-                          <div class="banner-profile-img">
-                            <a href="assets/images/me.png" data-fancybox="galleryMe"
-                              ><img src="assets/images/me.png" alt="assets/images/me.png" />
-                              <div class="hover-zome">
+                <div class="sidebar-top">
+                    <div class="profile-img">
+                        <a href="assets/images/me.png" data-fancybox="galleryMe"><img src="assets/images/me.png" alt="assets/images/me.png" />
+                            <div class="hover-zome">
                                 <i class="fa-solid fa-expand"></i>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <h2>
-                          Hi" There <br />
-                          I'm Front-end Developer
-                        </h2>
-                        <div class="writing-test">
-                          &lt;<i>code</i>&gt; I build <span id="typed"></span
-                          ><span class="wrap-text"></span>&lt;/<i>code</i>&gt;
-                        </div>
-                        <div class="banner-button">
-                          <a class="btnTheme" href="#">Explore now</a>
-                          <a class="secondaryBtn" href="#"
-                            >Hire me <i class="fa-solid fa-angle-right"></i
-                          ></a>
-                        </div>
-                      </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-xl-4">
-                      <div class="banner-author-pic">
-                        <img
-                          src="assets/images/banner-image.png"
-                          alt="Gouranga Roy"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                    <h4>Gouranga Roy</h4>
+                    <span>Wordpress Developer & Laravel Application</span>
                 </div>
-              </header>
-              <!-- Total-experience -->
-              <section class="total-experience">
-                <div class="row">
-                  <div class="col-md-3 col-sm-6">
-                    <div class="single-total-experience">
-                      <h4>05 +</h4>
-                      <span>My Experience</span>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="single-total-experience">
-                      <h4>25 +</h4>
-                      <span>Completed Project</span>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="single-total-experience">
-                      <h4>114</h4>
-                      <span>Happy Customers</span>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="single-total-experience">
-                      <h4>02</h4>
-                      <span>Honors and Awards</span>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- Services-area -->
-              <section class="services-area">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="section-title">
-                      <h4>My Services</h4>
-                    </div>
-                  </div>
-                </div>
-                <!-- Services-items -->
-                <div class="services-item">
-                  <div class="row mb-md-4 mb-sm-0">
-                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
-                      <div class="single-services-item">
-                        <h4>Web Development</h4>
-                        <p>
-                          Web development is the work involved in developing a
-                          website for the Internet or an intranet. Web
-                          development can range from developing a simple single
-                          static page of plain text to complex web applications,
-                          electronic businesses
-                        </p>
-                        <a href="#"
-                          >Order Now <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
-                      <div class="single-services-item">
-                        <h4>Php</h4>
-                        <p>
-                          PHP is a general-purpose scripting language geared
-                          toward web development. It was originally created by
-                          Danish-Canadian programmer Rasmus Lerdorf in 1994. The
-                          PHP reference implementation is now produced by The
-                          PHP Group.
-                        </p>
-                        <a href="#"
-                          >Order Now <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                      <div class="single-services-item">
-                        <h4>Wordpress</h4>
-                        <p>
-                          WordPress is a free and open-source content management
-                          system written in PHP and paired with a MySQL or
-                          MariaDB database. Features include a plugin
-                          architecture and a template system, referred to within
-                          WordPress as Themes.
-                        </p>
-                        <a href="#"
-                          >Order Now <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div
-                      class="col-xl-4 col-md-6 d-xl-none d-md-block d-sm-none"
-                    >
-                      <div class="single-services-item">
-                        <h4>Web Development</h4>
-                        <p>
-                          Web development is the work involved in developing a
-                          website for the Internet or an intranet. Web
-                          development can range from developing a simple single
-                          static page of plain text to complex web applications,
-                          electronic businesses
-                        </p>
-                        <a href="#"
-                          >Order Now <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
-                      <div class="single-services-item">
-                        <h4>Javascript, Jquery</h4>
-                        <p>
-                          JavaScript, often abbreviated JS, is a programming
-                          language that is one of the core technologies of the
-                          World Wide Web, alongside HTML and CSS. Over 97% of
-                          websites use JavaScript on the client side for web
-                          page behavior, often incorporating third-party
-                          libraries.
-                        </p>
-                        <a href="#"
-                          >Order Now <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
-                      <div class="single-services-item">
-                        <h4>Bootstrap, Sass</h4>
-                        <p>
-                          Bootstrap is a free and open-source CSS framework
-                          directed at responsive, mobile-first front-end web
-                          development. Sass is a preprocessor scripting language
-                          that is interpreted or compiled into Cascading Style
-                          Sheets. SassScript is the scripting language itself.
-                          Sass
-                        </p>
-                        <a href="#"
-                          >Order Now <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                      <div class="single-services-item services-mb">
-                        <h4>Programming Tec</h4>
-                        <p>
-                          There's been a lot of debate about which programming
-                          language is best for teaching students to program,
-                          but, ultimately, it doesn't matter. Learning to
-                          program isn't about syntax, it's about the algorithmic
-                          thinking.
-                        </p>
-                        <a href="#"
-                          >Order Now <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div
-                      class="col-xl-4 col-md-6 d-xl-none d-md-block d-sm-none"
-                    >
-                      <div class="single-services-item">
-                        <h4>Programming Tec</h4>
-                        <p>
-                          There's been a lot of debate about which programming
-                          language is best for teaching students to program,
-                          but, ultimately, it doesn't matter. Learning to
-                          program isn't about syntax, it's about the algorithmic
-                          thinking.
-                        </p>
-                        <a href="#"
-                          >Order Now <i class="fa-solid fa-angle-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- Pricing-items -->
-              <section class="pricing-items">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="section-title">
-                      <h4>Price Plans</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-5">
-                  <div class="col-md-4">
-                    <div class="single-price-item">
-                      <h4>Starter Price</h4>
-                      <div class="min-price">
-                        <h2>Free*</h2>
-                      </div>
-                      <div class="pricing-list">
+                <!-- Skill-bar -->
+                <div class="skill-bar">
+                    <div class="address-table">
                         <ul>
-                          <li><i class="fa-solid fa-check"></i> Web Design</li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> English
-                            Communication
-                          </li>
-                          <li class="no-offer">
-                            <i class="fa-solid fa-xmark"></i> web Development
-                          </li>
-                          <li class="no-offer">
-                            <i class="fa-solid fa-xmark"></i> Wordpress
-                            Development
-                          </li>
-                          <li class="no-offer">
-                            <i class="fa-solid fa-xmark"></i> Wordpress
-                            integration
-                          </li>
-                          <li class="no-offer">
-                            <i class="fa-solid fa-xmark"></i> SEO optimization
-                          </li>
+                            <li>
+                                <h6>Residence:</h6>
+                                <span>Bangladesh</span>
+                            </li>
+                            <li>
+                                <h6>City:</h6>
+                                <span>Thakurgaon</span>
+                            </li>
+                            <li>
+                                <h6>Age:</h6>
+                                <span>26</span>
+                            </li>
                         </ul>
-                      </div>
-                      <a href="#"
-                        >Order Now <i class="fa-solid fa-angle-right"></i
-                      ></a>
-                      <h6>*Free only when ordering paid services</h6>
                     </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="single-price-item popular-item">
-                      <h4>Starter Price</h4>
-                      <div class="min-price">
-                        <span>$</span>
-                        <h2>29</h2>
-                        <span>h</span>
-                      </div>
-                      <div class="pricing-list">
+                    <div class="ls-divider"></div>
+                    <!-- Language skill -->
+                    <div class="language-skill">
+                        <div class="progress-one">
+                            <div class="progress-english"></div>
+                            <span>English</span>
+                        </div>
+                        <div class="progress-tow">
+                            <div class="progress-bangla"></div>
+                            <span>France</span>
+                        </div>
+                        <div class="progress-three">
+                            <div class="progress-outhers"></div>
+                            <span>Outhers</span>
+                        </div>
+                    </div>
+                    <div class="ls-divider"></div>
+                    <!-- work-skill -->
+                    <div class="work-skill">
+                        <div class="html-skill">
+                            <span>Html</span>
+                            <div class="html"></div>
+                        </div>
+                        <div class="css-skill">
+                            <span>Css</span>
+                            <div class="css"></div>
+                        </div>
+                        <div class="javascript-skill">
+                            <span>Javascript</span>
+                            <div class="javascript"></div>
+                        </div>
+                        <div class="jquery-skill">
+                            <span>Jquery</span>
+                            <div class="jquery"></div>
+                        </div>
+                        <div class="php-skill">
+                            <span>Php</span>
+                            <div class="php"></div>
+                        </div>
+                        <div class="wordpress-skill">
+                            <span>Wordpress</span>
+                            <div class="wordpress"></div>
+                        </div>
+                        <div class="mysql-skill">
+                            <span>MySQL</span>
+                            <div class="mysql"></div>
+                        </div>
+                    </div>
+                    <div class="ls-divider"></div>
+                    <!-- Coding-language -->
+                    <div class="coding-language">
                         <ul>
-                          <li><i class="fa-solid fa-check"></i> Web Design</li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> English
-                            Communication
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> web Development
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> Wordpress
-                            integration
-                          </li>
-                          <li class="no-offer">
-                            <i class="fa-solid fa-xmark"></i> Wordpress
-                            Development
-                          </li>
-                          <li class="no-offer">
-                            <i class="fa-solid fa-xmark"></i> SEO optimization
-                          </li>
+                            <li><i class="fa-solid fa-check"></i> Html, Css, Sass</li>
+                            <li><i class="fa-solid fa-check"></i> Javascript, Jquery</li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Bootstrap, Materialize
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i> Wordpress Customization
+                            </li>
+                            <li><i class="fa-solid fa-check"></i> Git Knowledge</li>
+                            <li><i class="fa-solid fa-check"></i> Laravel Application</li>
                         </ul>
-                      </div>
-                      <a href="#" class=""
-                        >Order Now <i class="fa-solid fa-angle-right"></i
-                      ></a>
                     </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="single-price-item">
-                      <h4>Starter Price</h4>
-                      <div class="min-price">
-                        <span>$</span>
-                        <h2>120</h2>
-                        <span>m</span>
-                      </div>
-                      <div class="pricing-list">
-                        <ul>
-                          <li><i class="fa-solid fa-check"></i> Web Design</li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> web Development
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> Wordpress
-                            Development
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> Wordpress
-                            integration
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> SEO optimization
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-check"></i> English
-                            Communication
-                          </li>
-                        </ul>
-                      </div>
-                      <a href="#"
-                        >Order Now <i class="fa-solid fa-angle-right"></i
-                      ></a>
+                    <div class="ls-divider"></div>
+                    <!-- Cv-download -->
+                    <div class="cv-download">
+                        <button><a href="https://drive.google.com/file/d/1E4vIwOfyHSyIAaySfD-cHiMXmeevNEsL/view?usp=sharing" target="_blank">Download Cv <i class="fa-solid fa-download"></i></a></button>
                     </div>
-                  </div>
                 </div>
-              </section>
-              <!-- My Team-members -->
-              <section class="myTeam-member">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="section-title">
-                      <h4>My Team</h4>
-                    </div>
-                  </div>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/gourangaroy831/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/gourangaroy.gourangaroy.50" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/gouranga-roy" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://bit.ly/3aVzXIK" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 </div>
-                <!-- Team items -->
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="team-members">
-                      <div class="swiper swiper-members">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="single-team-member">
-                              <div class="member-image">
-                                <img
-                                  src="assets/images/team-person/utpol.jpg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="member-details">
-                                <div class="member-name">
-                                  <h4>Utpol Odikary Oronno</h4>
-                                  <span>Web Designer</span>
-                                </div>
-                                <p><b>Utpol Odikary Oronno</b>
-                                  Your Area - Get Info From Multiple Sources -
-                                  Click Searchley.com Right Now. Information -
-                                  Top Results, Find More at Searchley. Search &
-                                  Find The Best Results Now. Quick Answers.
-                                  Useful & Relevant. Find All Info You Want.
-                                  Explore the Best Info Now. Find in Seconds.
-                                </p>
-                                <div class="member-rating">
-                                  <ul>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li class="rat-mark">
-                                      <i class="fa-solid fa-star"></i>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="single-team-member">
-                              <div class="member-image">
-                                <img
-                                  src="assets/images/team-person/liton.jpg"
-                                  alt="Liton"
-                                />
-                              </div>
-                              <div class="member-details">
-                                <div class="member-name">
-                                  <h4>Liton Chandra Barman</h4>
-                                  <span>Marketing Service</span>
-                                </div>
-                                <p><b>Liton Chandra Barman</b>
-                                  Marketing is the process of exploring,
-                                  creating, and delivering value to meet the
-                                  needs of a target market in terms of goods and
-                                  services;[1][2] potentially including
-                                  selection of a target audience; selection of
-                                  certain attributes or themes to emphasize in
-                                  advertising;
-                                </p>
-                                <div class="member-rating">
-                                  <ul>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li class="rat-mark">
-                                      <i class="fa-solid fa-star"></i>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="single-team-member">
-                              <div class="member-image">
-                                <img
-                                  src="assets/images/me.png"
-                                  alt="Gouranga"
-                                />
-                              </div>
-                              <div class="member-details">
-                                <div class="member-name">
-                                  <h4>Gouranga Roy</h4>
-                                  <span>Team Author</span>
-                                </div>
-                                <p><b>Gouranga Roy*</b>
-                                  The Reading Teacher is a peer-reviewed journal
-                                  serving teachers and literacy professionals
-                                  interested in the teaching of reading to
-                                  children in the elementary classroom. The
-                                  journal offers teaching tips, application of
-                                  research to classroom practice,
-                                  thought-provoking commentaries, book and
-                                  resources.
-                                </p>
-                                <div class="member-rating">
-                                  <ul>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="single-team-member">
-                              <div class="member-image">
-                                <img
-                                  src="assets/images/team-person/alom.jpg"
-                                  alt="alom"
-                                />
-                              </div>
-                              <div class="member-details">
-                                <div class="member-name">
-                                  <h4>Mohammad Shah-alom</h4>
-                                  <span>Web Designer</span>
-                                </div>
-                                <p><b>Mohammad Shah-alom</b>
-                                  Your Area - Get Info From Multiple Sources -
-                                  Click Searchley.com Right Now. Information -
-                                  Top Results, Find More at Searchley. Search &
-                                  Find The Best Results Now. Quick Answers.
-                                  Useful & Relevant. Find All Info You Want.
-                                  Explore the Best Info Now. Find in Seconds.
-                                </p>
-                                <div class="member-rating">
-                                  <ul>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li class="rat-mark">
-                                      <i class="fa-solid fa-star"></i>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="single-team-member">
-                              <div class="member-image">
-                                <img
-                                  src="assets/images/team-person/uttom.jpg"
-                                  alt="uttom"
-                                />
-                              </div>
-                              <div class="member-details">
-                                <div class="member-name">
-                                  <h4>Real Means Uttam</h4>
-                                  <span>Web Designer</span>
-                                </div>
-                                <p><b>Real Means Uttam</b>
-                                  Your Area - Get Info From Multiple Sources -
-                                  Click Searchley.com Right Now. Information -
-                                  Top Results, Find More at Searchley. Search &
-                                  Find The Best Results Now. Quick Answers.
-                                  Useful & Relevant. Find All Info You Want.
-                                  Explore the Best Info Now. Find in Seconds.
-                                </p>
-                                <div class="member-rating">
-                                  <ul>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li class="rat-mark">
-                                      <i class="fa-solid fa-star"></i>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="single-team-member">
-                              <div class="member-image">
-                                <img
-                                  src="assets/images/team-person/vismo.jpg"
-                                  alt="vismo"
-                                />
-                              </div>
-                              <div class="member-details">
-                                <div class="member-name">
-                                  <h4>Vismo Dev</h4>
-                                  <span>Web Designer</span>
-                                </div>
-                                <p>
-                                  <b>Vismo Dev</b>
-                                  Your Area - Get Info From Multiple Sources -
-                                  Click Searchley.com Right Now. Information -
-                                  Top Results, Find More at Searchley. Search &
-                                  Find The Best Results Now. Quick Answers.
-                                  Useful & Relevant. Find All Info You Want.
-                                  Explore the Best Info Now. Find in Seconds.
-                                </p>
-                                <div class="member-rating">
-                                  <ul>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li class="rat-mark">
-                                      <i class="fa-solid fa-star"></i>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="teamMember-pagination"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- My-work -->
-              <section class="my-work">
-                <div class="row mb-5">
-                  <div class="col-md-3">
-                    <div class="section-title">
-                      <h4>My Works</h4>
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="gallery-btn">
-                      <ul>
-                        <li class="filter-btn" data-filter="all">ALL</li>
-                        <li class="filter-btn" data-filter=".business">
-                          Business
-                        </li>
-                        <li class="filter-btn" data-filter=".commerce">
-                          E-commerce
-                        </li>
-                        <li class="filter-btn" data-filter=".education">
-                          Educational
-                        </li>
-                        <li class="filter-btn" data-filter=".news">
-                          News Paper
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="gallery-items" id="mix-wrapper">
-                      <ul>
-                        <li class="mix business">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/degital-gency.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/degital-gency.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>Platform Business</h4>
-                              <p>
-                                What we mean with a platform business is a
-                                business model (not a technology
-                                infrastructure).
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="mix commerce">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/fadoo.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/fadoo.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>Market Placing</h4>
-                              <p>
-                                Marketing is the process of exploring, creating.
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="mix business">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/buldex.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/buldex.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>Contraction Definition</h4>
-                              <p>
-                                A contraction is a shortened version of the
-                                spoken and written forms of a word,
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="mix business">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/jomehost.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/jomehost.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>Web hosting service</h4>
-                              <p>
-                                A web hosting service is a type of Internet
-                                hosting service that hosts websites for clients,
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="mix education">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/eatils.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/eatils.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>Business Share</h4>
-                              <p>
-                                A business is defined as an organization or
-                                enterprising entity engaged in commercial,
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="mix commerce">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/pricing.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/pricing.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>pricing strategy</h4>
-                              <p>
-                                A business can use a variety of pricing
-                                strategies when selling a product or service.
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="mix education">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/netflex.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/netflex.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>Netflix Bangladesh</h4>
-                              <p>
-                                Netflix, Inc. is an American subscription
-                                streaming service and production company.
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="mix commerce">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/appoin.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/appoin.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>Business Share</h4>
-                              <p>
-                                A business is defined as an organization or
-                                enterprising entity engaged in commercial,
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="mix commerce">
-                          <div class="single-project">
-                            <div class="project-demo">
-                              <a
-                                data-fancybox="gallery"
-                                href="assets/images/all-project/shpping.png"
-                              >
-                                <img
-                                  class="rounded"
-                                  src="assets/images/all-project/shpping.png"
-                                />
-                              </a>
-                            </div>
-                            <div class="project-title">
-                              <h4>Shopping Product</h4>
-                              <p>
-                                Get the best Results for Ecommerce Website Uk.
-                              </p>
-                              <a href="#"
-                                >Live Preview
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <!-- Educational and Work -->
-              <section class="educational-work">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="section-title">
-                      <h4>Education</h4>
-                    </div>
-                    <div class="full-details">
-                      <ul>
-                        <li>
-                          <div class="single-details">
-                            <div class="title-post">
-                              <div>
-                                <h4>CSE Engineering</h4>
-                                <p>Programming in Tec.</p>
-                              </div>
-                              <span class="post-date">jan 2018 - may 2022</span>
-                            </div>
-                            <p>
-                              I'm Gouranga Roy, and I'm working with 3+ Experience in this field. My have team members 5 and working 30+ Project category business, newspaper, Shopping, Netflix, Web hosting, Market Placing, Contraction Definition, pricing strategy or etc. relate work. So if you want your business grow up and need any kind of website please hire me. 
-                            </p>
-                            <a href="https://bit.ly/3OgUdCu" target="_blank"
-                              >Order Now <i class="fa-solid fa-angle-right"></i
-                            ></a>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="single-details">
-                            <div class="title-post">
-                              <div>
-                                <h4>Coder It Solution</h4>
-                                <p>Out of Course</p>
-                              </div>
-                              <span class="post-date">Jan 2022 - Sep 2022</span>
-                            </div>
-                            <div class="details-pera">
-                              <p>
-                                Coder IT Solution is a professional Web, E-Commerce, and software development company, providing Web Courses and an extent of affordable custom website design, E-Commerce, in fact, all kind of website design services to clients all over the world.
-                              </p>
-                              <a href="https://coderitsolution.com/"
-                                >Order Now
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="single-details">
-                            <div class="title-post">
-                              <div>
-                                <h4>Programming Hero</h4>
-                                <p>Out of Course</p>
-                              </div>
-                              <span class="post-date">Jun 2020 - dec 2020</span>
-                            </div>
-                            <div class="details-pera">
-                              <p>
-                                <b>Team - Programming Hero</b><br>
-                                We started with one mission: Make Learning fun. Since then, all five and a half caffeine sucking night owls are having fun. 
-                              </p>
-                              <a href="#"
-                                >Order Now
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="single-details">
-                            <div class="title-post">
-                              <div>
-                                <h4>Marketing Placement</h4>
-                                <p>Team Management</p>
-                              </div>
-                              <span class="post-date">jan 2017 - may 2022</span>
-                            </div>
-                            <div class="details-pera">
-                              <p>
-                                <b>Full-Time Remote Workers - </b>
-                                <mark>Hire Full-Time International Talent Centralized Employee Management.</mark>
-                                Deel empowers companies to hire remote contractors and employees from 150 countries. Hire employees in another country in minutes without the cost, time, and extra admin. One Click Payments. 24/7 Customer Support. Law Compliant Contracts. Pay Full-Time Workers.
-                              </p>
-                              <a href="#"
-                                >Order Now
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="section-title">
-                      <h4>Work History</h4>
-                    </div>
-                    <div class="full-details">
-                      <ul>
-                        <li>
-                          <div class="single-details">
-                            <div class="title-post">
-                              <div>
-                                <h4>Platform Business</h4>
-                                <p>Business Platform</p>
-                              </div>
-                              <span class="post-date">jan 2018 - may 2022</span>
-                            </div>
-                            <p>
-                              Find new customers and opportunities around the world with the help of market finder. Discover helpful information for new markets and plan for success with market finder Top Searched Themes. Google Search Insights. Year in Search Report. Latest Search Trends.
-                            </p>
-                            <a href="#"
-                              >Order Now <i class="fa-solid fa-angle-right"></i
-                            ></a>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="single-details">
-                            <div class="title-post">
-                              <div>
-                                <h4>Market Placing</h4>
-                                <p>Area Platform</p>
-                              </div>
-                              <span class="post-date">jan 2019 - may 2022</span>
-                            </div>
-                            <div class="details-pera">
-                              <p>
-                                Create a Website with Wix and Get Safe Website Hosting. Get Online Today with Wix! Wix is a Free Website Builder and a Secure Hosting Platform for Your Site. Free multilingual fonts.
-                              </p>
-                              <a href="#"
-                                >Order Now
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="single-details">
-                            <div class="title-post">
-                              <div>
-                                <h4>Web hosting service</h4>
-                                <p>Hosting Platform</p>
-                              </div>
-                              <span class="post-date">jan 2015 - may 2021</span>
-                            </div>
-                            <div class="details-pera">
-                              <p>
-                                A web hosting service is a type of Internet hosting service that hosts websites for clients, i.e. it offers the facilities required for them to create and maintain a site and makes it accessible on the World Wide Web
-                              </p>
-                              <a href="#"
-                                >Order Now
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="single-details">
-                            <div class="title-post">
-                              <div>
-                                <h4>Netflix Bangladesh</h4>
-                                <p>Netflix Platform</p>
-                              </div>
-                              <span class="post-date">jan 2020 - Jan 2022</span>
-                            </div>
-                            <div class="details-pera">
-                              <p>
-                                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
-                                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of ...
-                              </p>
-                              <a href="#"
-                                >Order Now
-                                <i class="fa-solid fa-angle-right"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <!-- Contact information -->
-              <section class="contact-information">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="section-title">
-                      <h4>Contact information</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="information-text">
-                      <ul>
-                        <li>
-                          <h4>Country:</h4>
-                          <span>Bangladesh</span>
-                        </li>
-                        <li>
-                          <h4>City:</h4>
-                          <span>Thakurgaon</span>
-                        </li>
-                        <li>
-                          <h4>Streat:</h4>
-                          <span>Sodur</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="information-text">
-                      <ul>
-                        <li>
-                          <h4>Email:</h4>
-                          <span>gourangaroy831@gmail.com</span>
-                        </li>
-                        <li>
-                          <h4>linkedin:</h4>
-                          <span><a href="https://bit.ly/3zpwfAx" target="_blank">https://bit.ly/3zpwfAx</a></span>
-                        </li>
-                        <li>
-                          <h4>Skype:</h4>
-                          <span>live:.cid.f060c44b29511ab9</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="information-text">
-                      <ul>
-                        <li>
-                          <h4>Support service:</h4>
-                          <span>+8801571321141</span>
-                        </li>
-                        <li>
-                          <h4>Office:</h4>
-                          <span>+8801304187872</span>
-                        </li>
-                        <li>
-                          <h4>Personal:</h4>
-                          <span>+8801304187872</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-               
-                </div>
-              </section>
-              <!-- Contact-area -->
-              <section class="contact-area">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="section-title">
-                      <h4>Get in touch</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="contact-form">
-                  <form action="#" method="">
-                    <div class="row gx-5">
-                      <div class="col-md-6">
-                        <div class="input-filed">
-                          <input type="text" id="name" required />
-                          <label for="name">Name</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-filed">
-                          <input type="email" id="email" required />
-                          <label for="email">Email</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row gx-5">
-                      <div class="col-md-6">
-                        <div class="input-filed">
-                          <input type="text" id="address" required />
-                          <label for="address">Address</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-filed">
-                          <input type="text" id="company" required />
-                          <label for="company">Company</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="input-filed message-text">
-                          <textarea
-                            type="text"
-                            id="comment"
-                            required
-                          ></textarea>
-                          <label for="comment">Comment</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 form-submit">
-                        <input type="submit" value="Submit" />
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </section>
-              <!-- Tech-area -->
-              <section class="tech-area">
-                <div class="tech-items">
-                  <div class="tach-img">
-                    <img src="assets/images/tech/1.png" alt="tech-img" />
-                  </div>
-                  <div class="tach-img">
-                    <img src="assets/images/tech/2.png" alt="tech-img" />
-                  </div>
-                  <div class="tach-img">
-                    <img src="assets/images/tech/3.png" alt="tech-img" />
-                  </div>
-                  <div class="tach-img">
-                    <img src="assets/images/tech/1.png" alt="tech-img" />
-                  </div>
-                </div>
-              </section>
-              <!-- Footer-area -->
-              <footer class="footer-area">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="footer-text">
-                      <div class="copyright">
-                        <p>&copy; 2022 Coder It Solution</p>
-                      </div>
-                      <div class="author">
-                        <p>Template author: <a href="#">Gouranga Roy</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </footer>
             </div>
-          </div>
+            <!-- Min-content -->
+            <div class="min-content">
+                <!-- Banner-area -->
+                <div class="content-banner">
+                    <div class="banner-minContent">
+                        <!-- Banner-header -->
+                        <header class="banner-header">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-8 col-lg-12">
+                                        <div class="banner-caption">
+                                            <div class="tablet-device-profile">
+                                                <div class="banner-profile-img">
+                                                    <a href="assets/images/me.png" data-fancybox="galleryMe"><img src="assets/images/me.png" alt="assets/images/me.png" />
+                                                        <div class="hover-zome">
+                                                            <i class="fa-solid fa-expand"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h2>
+                                                Hi" There <br />
+                                                I'm Wordpress Developer
+                                            </h2>
+                                            <div class="writing-test">
+                                                &lt;<i>code</i>&gt; I build <span id="typed"></span><span class="wrap-text"></span>&lt;/<i>code</i>&gt;
+                                            </div>
+                                            <p>I specialize in WordPress theme development and customization—tailored to your brand, built for performance.</p>
+                                            <div class="banner-button">
+                                                <a class="btnTheme" target="_blank" href="https://github.com/gouranga-roy">Explore now</a>
+                                                <a class="secondaryBtn" target="_blank" href="https://www.linkedin.com/in/gourangaroy831/">Hire me <i class="fa-solid fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="banner-author-pic">
+                                            <img src="assets/images/banner-image.png" alt="Gouranga Roy" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- Total-experience -->
+                        <section class="total-experience">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="single-total-experience">
+                                        <h4>05 +</h4>
+                                        <span>My Experience</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="single-total-experience">
+                                        <h4>200 +</h4>
+                                        <span>Completed Project</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="single-total-experience">
+                                        <h4>160</h4>
+                                        <span>Happy Customers</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="single-total-experience">
+                                        <h4>24</h4>
+                                        <span>Hours Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Services-area -->
+                        <section class="services-area">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title">
+                                        <h4>My Services</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Services-items -->
+                            <div class="services-item">
+                                <div class="row mb-md-4 mb-sm-0">
+                                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
+                                        <div class="single-services-item">
+                                            <h4>Web Development</h4>
+                                            <p>
+                                                Specializing in WordPress development, I design and build fully customized websites. My focus is clean code, performance, and responsive design—ensuring your site stands out and runs smoothly on all devices.
+                                            </p>
+                                            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
+                                        <div class="single-services-item">
+                                            <h4>Php</h4>
+                                            <p>As a PHP developer, I create powerful backend systems and custom WordPress functionalities. My code is clean, efficient, and tailored to deliver fast, scalable, and secure web experiences.
+                                            </p>
+                                            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
+                                        <div class="single-services-item">
+                                            <h4>Wordpress Development</h4>
+                                            <p>I develop WordPress websites that are easy to manage, mobile-friendly, and uniquely designed. My process ensures your site is fast, secure, and aligned with your brand identity.
+                                            </p>
+                                            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
+                                        <div class="single-services-item">
+                                            <h4>Elementor Customization</h4>
+                                            <p>With deep Elementor experience, I customize themes, create unique layouts, and enhance performance—delivering a website that looks great, loads fast, and works beautifully on every device.
+                                            </p>
+                                            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
+                                        <div class="single-services-item">
+                                            <h4>Woocommerce Store</h4>
+                                            <p>I help businesses launch and scale with custom WooCommerce solutions. Clean design, smart functionality, and seamless user experience—that’s what I deliver in every store.
+                                            </p>
+                                            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 mb-xl-0 mb-md-4">
+                                        <div class="single-services-item">
+                                            <h4>Laravel Application</h4>
+                                            <p>Laravel is my go-to PHP framework for building web apps. I create custom features, integrate APIs, and design intuitive interfaces that keep users engaged and businesses running smoothly.
+                                            </p>
+                                            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- My-work -->
+                        <section class="my-work">
+                            <div class="row mb-5">
+                                <div class="col-md-3">
+                                    <div class="section-title">
+                                        <h4>My Projects</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="gallery-btn">
+                                        <ul>
+                                            <li class="filter-btn" data-filter="all">ALL</li>
+                                            <li class="filter-btn" data-filter=".business">
+                                                Business
+                                            </li>
+                                            <li class="filter-btn" data-filter=".commerce">
+                                                E-commerce
+                                            </li>
+                                            <li class="filter-btn" data-filter=".education">
+                                                Educational
+                                            </li>
+                                            <li class="filter-btn" data-filter=".news">
+                                                News Paper
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="gallery-items" id="mix-wrapper">
+                                        <ul>
+                                            <li class="mix business">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/degital-gency.png">
+                                                            <img class="rounded" src="assets/images/all-project/degital-gency.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>Platform Business</h4>
+                                                        <p>
+                                                            What we mean with a platform business is a
+                                                            business model (not a technology
+                                                            infrastructure).
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mix commerce">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/fadoo.png">
+                                                            <img class="rounded" src="assets/images/all-project/fadoo.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>Market Placing</h4>
+                                                        <p>
+                                                            Marketing is the process of exploring, creating.
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mix business">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/buldex.png">
+                                                            <img class="rounded" src="assets/images/all-project/buldex.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>Contraction Definition</h4>
+                                                        <p>
+                                                            A contraction is a shortened version of the
+                                                            spoken and written forms of a word,
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mix business">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/jomehost.png">
+                                                            <img class="rounded" src="assets/images/all-project/jomehost.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>Web hosting service</h4>
+                                                        <p>
+                                                            A web hosting service is a type of Internet
+                                                            hosting service that hosts websites for clients,
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mix education">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/eatils.png">
+                                                            <img class="rounded" src="assets/images/all-project/eatils.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>Business Share</h4>
+                                                        <p>
+                                                            A business is defined as an organization or
+                                                            enterprising entity engaged in commercial,
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mix commerce">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/pricing.png">
+                                                            <img class="rounded" src="assets/images/all-project/pricing.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>pricing strategy</h4>
+                                                        <p>
+                                                            A business can use a variety of pricing
+                                                            strategies when selling a product or service.
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mix education">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/netflex.png">
+                                                            <img class="rounded" src="assets/images/all-project/netflex.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>Netflix Bangladesh</h4>
+                                                        <p>
+                                                            Netflix, Inc. is an American subscription
+                                                            streaming service and production company.
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mix commerce">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/appoin.png">
+                                                            <img class="rounded" src="assets/images/all-project/appoin.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>Business Share</h4>
+                                                        <p>
+                                                            A business is defined as an organization or
+                                                            enterprising entity engaged in commercial,
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mix commerce">
+                                                <div class="single-project">
+                                                    <div class="project-demo">
+                                                        <a data-fancybox="gallery" href="assets/images/all-project/shpping.png">
+                                                            <img class="rounded" src="assets/images/all-project/shpping.png" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-title">
+                                                        <h4>Shopping Product</h4>
+                                                        <p>
+                                                            Get the best Results for Ecommerce Website Uk.
+                                                        </p>
+                                                        <a href="#">Live Preview
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- My Team-members -->
+                        <section class="myTeam-member">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title">
+                                        <h4>My Team</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team items -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="team-members">
+                                        <div class="swiper swiper-members">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="single-team-member">
+                                                        <div class="member-image">
+                                                            <img src="assets/images/team-person/utpol.jpg" alt="" />
+                                                        </div>
+                                                        <div class="member-details">
+                                                            <div class="member-name">
+                                                                <h4>Utpol Odikary Oronno</h4>
+                                                                <span>Web Designer</span>
+                                                            </div>
+                                                            <p><b>Utpol Odikary Oronno</b>
+                                                                Your Area - Get Info From Multiple Sources -
+                                                                Click Searchley.com Right Now. Information -
+                                                                Top Results, Find More at Searchley. Search &
+                                                                Find The Best Results Now. Quick Answers.
+                                                                Useful & Relevant. Find All Info You Want.
+                                                                Explore the Best Info Now. Find in Seconds.
+                                                            </p>
+                                                            <div class="member-rating">
+                                                                <ul>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="rat-mark">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="single-team-member">
+                                                        <div class="member-image">
+                                                            <img src="assets/images/team-person/liton.jpg" alt="Liton" />
+                                                        </div>
+                                                        <div class="member-details">
+                                                            <div class="member-name">
+                                                                <h4>Liton Chandra Barman</h4>
+                                                                <span>Marketing Service</span>
+                                                            </div>
+                                                            <p><b>Liton Chandra Barman</b>
+                                                                Marketing is the process of exploring,
+                                                                creating, and delivering value to meet the
+                                                                needs of a target market in terms of goods and
+                                                                services;[1][2] potentially including
+                                                                selection of a target audience; selection of
+                                                                certain attributes or themes to emphasize in
+                                                                advertising;
+                                                            </p>
+                                                            <div class="member-rating">
+                                                                <ul>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="rat-mark">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="single-team-member">
+                                                        <div class="member-image">
+                                                            <img src="assets/images/me.png" alt="Gouranga" />
+                                                        </div>
+                                                        <div class="member-details">
+                                                            <div class="member-name">
+                                                                <h4>Gouranga Roy</h4>
+                                                                <span>Team Author</span>
+                                                            </div>
+                                                            <p><b>Gouranga Roy*</b>
+                                                                The Reading Teacher is a peer-reviewed journal
+                                                                serving teachers and literacy professionals
+                                                                interested in the teaching of reading to
+                                                                children in the elementary classroom. The
+                                                                journal offers teaching tips, application of
+                                                                research to classroom practice,
+                                                                thought-provoking commentaries, book and
+                                                                resources.
+                                                            </p>
+                                                            <div class="member-rating">
+                                                                <ul>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="single-team-member">
+                                                        <div class="member-image">
+                                                            <img src="assets/images/team-person/alom.jpg" alt="alom" />
+                                                        </div>
+                                                        <div class="member-details">
+                                                            <div class="member-name">
+                                                                <h4>Mohammad Shah-alom</h4>
+                                                                <span>Web Designer</span>
+                                                            </div>
+                                                            <p><b>Mohammad Shah-alom</b>
+                                                                Your Area - Get Info From Multiple Sources -
+                                                                Click Searchley.com Right Now. Information -
+                                                                Top Results, Find More at Searchley. Search &
+                                                                Find The Best Results Now. Quick Answers.
+                                                                Useful & Relevant. Find All Info You Want.
+                                                                Explore the Best Info Now. Find in Seconds.
+                                                            </p>
+                                                            <div class="member-rating">
+                                                                <ul>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="rat-mark">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="single-team-member">
+                                                        <div class="member-image">
+                                                            <img src="assets/images/team-person/uttom.jpg" alt="uttom" />
+                                                        </div>
+                                                        <div class="member-details">
+                                                            <div class="member-name">
+                                                                <h4>Real Means Uttam</h4>
+                                                                <span>Web Designer</span>
+                                                            </div>
+                                                            <p><b>Real Means Uttam</b>
+                                                                Your Area - Get Info From Multiple Sources -
+                                                                Click Searchley.com Right Now. Information -
+                                                                Top Results, Find More at Searchley. Search &
+                                                                Find The Best Results Now. Quick Answers.
+                                                                Useful & Relevant. Find All Info You Want.
+                                                                Explore the Best Info Now. Find in Seconds.
+                                                            </p>
+                                                            <div class="member-rating">
+                                                                <ul>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="rat-mark">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="single-team-member">
+                                                        <div class="member-image">
+                                                            <img src="assets/images/team-person/vismo.jpg" alt="vismo" />
+                                                        </div>
+                                                        <div class="member-details">
+                                                            <div class="member-name">
+                                                                <h4>Vismo Dev</h4>
+                                                                <span>Web Designer</span>
+                                                            </div>
+                                                            <p>
+                                                                <b>Vismo Dev</b>
+                                                                Your Area - Get Info From Multiple Sources -
+                                                                Click Searchley.com Right Now. Information -
+                                                                Top Results, Find More at Searchley. Search &
+                                                                Find The Best Results Now. Quick Answers.
+                                                                Useful & Relevant. Find All Info You Want.
+                                                                Explore the Best Info Now. Find in Seconds.
+                                                            </p>
+                                                            <div class="member-rating">
+                                                                <ul>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="rat-mark">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="teamMember-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Educational and Work -->
+                        <section class="educational-work">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="section-title">
+                                        <h4>Education</h4>
+                                    </div>
+                                    <div class="full-details">
+                                        <ul>
+                                            <li>
+                                                <div class="single-details">
+                                                    <div class="title-post">
+                                                        <div>
+                                                            <h4>CSE Engineering</h4>
+                                                            <p>Programming in Tec.</p>
+                                                        </div>
+                                                        <span class="post-date">jan 2018 - may 2021</span>
+                                                    </div>
+                                                    <p>
+                                                        I'm Gouranga Roy, and I'm working with 3+ Experience in this field. My have team members 5 and working 30+ Project category business, newspaper, Shopping, Netflix, Web hosting, Market Placing, Contraction Definition, pricing strategy or etc. relate work. So if you want your business grow up and need any kind of website please hire me.
+                                                    </p>
+                                                    <a href="https://bit.ly/3OgUdCu" target="_blank">Learn more <i class="fa-solid fa-angle-right"></i></a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-details">
+                                                    <div class="title-post">
+                                                        <div>
+                                                            <h4>Coder It Solution</h4>
+                                                            <p>Out of Course</p>
+                                                        </div>
+                                                        <span class="post-date">Jan 2022 - Sep 2022</span>
+                                                    </div>
+                                                    <div class="details-pera">
+                                                        <p>
+                                                            Coder IT Solution is a professional Web, E-Commerce, and software development company, providing Web Courses and an extent of affordable custom website design, E-Commerce, in fact, all kind of website design services to clients all over the world.
+                                                        </p>
+                                                        <a href="https://coderitsolution.com/">Learn more
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-details">
+                                                    <div class="title-post">
+                                                        <div>
+                                                            <h4>Programming Hero</h4>
+                                                            <p>Out of Course</p>
+                                                        </div>
+                                                        <span class="post-date">Jun 2020 - dec 2020</span>
+                                                    </div>
+                                                    <div class="details-pera">
+                                                        <p>
+                                                            <b>Team - Programming Hero</b><br>
+                                                            We started with one mission: Make Learning fun. Since then, all five and a half caffeine sucking night owls are having fun.
+                                                        </p>
+                                                        <a href="#">Learn more
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-details">
+                                                    <div class="title-post">
+                                                        <div>
+                                                            <h4>Marketing Placement</h4>
+                                                            <p>Team Management</p>
+                                                        </div>
+                                                        <span class="post-date">jan 2017 - may 2022</span>
+                                                    </div>
+                                                    <div class="details-pera">
+                                                        <p>
+                                                            <b>Full-Time Remote Workers - </b>
+                                                            <mark>Hire Full-Time International Talent Centralized Employee Management.</mark>
+                                                            Deel empowers companies to hire remote contractors and employees from 150 countries. Hire employees in another country in minutes without the cost, time, and extra admin. One Click Payments. 24/7 Customer Support. Law Compliant Contracts. Pay Full-Time Workers.
+                                                        </p>
+                                                        <a href="#">Learn more
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="section-title">
+                                        <h4>Work History</h4>
+                                    </div>
+                                    <div class="full-details">
+                                        <ul>
+                                            <li>
+                                                <div class="single-details">
+                                                    <div class="title-post">
+                                                        <div>
+                                                            <h4>Platform Business</h4>
+                                                            <p>Business Platform</p>
+                                                        </div>
+                                                        <span class="post-date">jan 2018 - may 2022</span>
+                                                    </div>
+                                                    <p>
+                                                        Find new customers and opportunities around the world with the help of market finder. Discover helpful information for new markets and plan for success with market finder Top Searched Themes. Google Search Insights. Year in Search Report. Latest Search Trends.
+                                                    </p>
+                                                    <a href="#">Learn more <i class="fa-solid fa-angle-right"></i></a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-details">
+                                                    <div class="title-post">
+                                                        <div>
+                                                            <h4>Market Placing</h4>
+                                                            <p>Area Platform</p>
+                                                        </div>
+                                                        <span class="post-date">jan 2019 - may 2022</span>
+                                                    </div>
+                                                    <div class="details-pera">
+                                                        <p>
+                                                            Create a Website with Wix and Get Safe Website Hosting. Get Online Today with Wix! Wix is a Free Website Builder and a Secure Hosting Platform for Your Site. Free multilingual fonts.
+                                                        </p>
+                                                        <a href="#">Learn more
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-details">
+                                                    <div class="title-post">
+                                                        <div>
+                                                            <h4>Web hosting service</h4>
+                                                            <p>Hosting Platform</p>
+                                                        </div>
+                                                        <span class="post-date">jan 2015 - may 2021</span>
+                                                    </div>
+                                                    <div class="details-pera">
+                                                        <p>
+                                                            A web hosting service is a type of Internet hosting service that hosts websites for clients, i.e. it offers the facilities required for them to create and maintain a site and makes it accessible on the World Wide Web
+                                                        </p>
+                                                        <a href="#">Learn more
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-details">
+                                                    <div class="title-post">
+                                                        <div>
+                                                            <h4>Netflix Bangladesh</h4>
+                                                            <p>Netflix Platform</p>
+                                                        </div>
+                                                        <span class="post-date">jan 2020 - Jan 2022</span>
+                                                    </div>
+                                                    <div class="details-pera">
+                                                        <p>
+                                                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                                                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of ...
+                                                        </p>
+                                                        <a href="#">Learn more
+                                                            <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Contact information -->
+                        <section class="contact-information">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title">
+                                        <h4>Contact information</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="information-text">
+                                        <ul>
+                                            <li>
+                                                <h4>Country:</h4>
+                                                <span>Bangladesh</span>
+                                            </li>
+                                            <li>
+                                                <h4>City:</h4>
+                                                <span>Thakurgaon</span>
+                                            </li>
+                                            <li>
+                                                <h4>Streat:</h4>
+                                                <span>Sodur</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="information-text">
+                                        <ul>
+                                            <li>
+                                                <h4>Email:</h4>
+                                                <span>gourangaroy831@gmail.com</span>
+                                            </li>
+                                            <li>
+                                                <h4>linkedin:</h4>
+                                                <span><a href="https://www.linkedin.com/in/gourangaroy831/" target="_blank">https://www.linkedin.com/in/gourangaroy831</a></span>
+                                            </li>
+                                            <li>
+                                                <h4>Skype:</h4>
+                                                <span>live:.cid.f060c44b29511ab9</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="information-text">
+                                        <ul>
+                                            <li>
+                                                <h4>Support service:</h4>
+                                                <span>+8801571321141</span>
+                                            </li>
+                                            <li>
+                                                <h4>WhatsApp:</h4>
+                                                <span>+8801304187872</span>
+                                            </li>
+                                            <li>
+                                                <h4>Personal:</h4>
+                                                <span>+8801304187872</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- Contact-area -->
+                        <section class="contact-area">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title">
+                                        <h4>Get in touch</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form">
+                                <form action="#" method="">
+                                    <div class="row gx-5">
+                                        <div class="col-md-6">
+                                            <div class="input-filed">
+                                                <input type="text" id="name" required />
+                                                <label for="name">Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-filed">
+                                                <input type="email" id="email" required />
+                                                <label for="email">Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row gx-5">
+                                        <div class="col-md-6">
+                                            <div class="input-filed">
+                                                <input type="text" id="address" required />
+                                                <label for="address">Address</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-filed">
+                                                <input type="text" id="company" required />
+                                                <label for="company">Company</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-filed message-text">
+                                                <textarea type="text" id="comment" required></textarea>
+                                                <label for="comment">Comment</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 form-submit">
+                                            <input type="submit" value="Submit" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                        <!-- Tech-area -->
+                        <section class="tech-area">
+                            <div class="tech-items">
+                                <div class="tach-img">
+                                    <img src="assets/images/tech/wordpress.png" alt="tech-img" />
+                                </div>
+                                <div class="tach-img">
+                                    <img src="assets/images/tech/elementor.png" alt="tech-img" />
+                                </div>
+                                <div class="tach-img">
+                                    <img src="assets/images/tech/woocommerce.png" alt="tech-img" />
+                                </div>
+                                <div class="tach-img">
+                                    <img src="assets/images/tech/laravel.png" alt="tech-img" />
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Footer-area -->
+                        <footer class="footer-area">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="footer-text">
+                                        <div class="copyright">
+                                            <p>&copy; 2022 Coder It Solution</p>
+                                        </div>
+                                        <div class="author">
+                                            <p>Template author: <a href="https://www.facebook.com/gourangaroy.gourangaroy.50" target="_blank">Gouranga Roy</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- js file -->
@@ -1382,5 +1062,6 @@
     <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/swup.min.js"></script>
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
