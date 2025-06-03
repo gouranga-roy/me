@@ -25,8 +25,8 @@ Welcome to my GitHub profile! I’m a passionate developer focused on building c
 
 ## 📂 My Portfolio
 
-You can check out my personal portfolio [here](https://your-portfolio-link.com)  
-> I’ve worked on custom WordPress sites, dynamic Laravel apps, and eCommerce solutions with WooCommerce.
+You can check out my personal portfolio https://gouranga-roy.github.io/me/
+> I’ve worked on custom WordPress sites Elementor Pro, dynamic Laravel apps, and eCommerce solutions with WooCommerce.
 
 ## 📈 GitHub Stats
 
@@ -35,9 +35,9 @@ You can check out my personal portfolio [here](https://your-portfolio-link.com)
 
 ## 📫 Let’s Connect
 
-- 🌐 Portfolio: [your-portfolio-link.com](https://your-portfolio-link.com)  
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-- 📧 Email: yourname@example.com
+- 🌐 Portfolio: https://gouranga-roy.github.io/me/
+- 💼 LinkedIn: https://www.linkedin.com/in/gourangaroy831/
+- 📧 Email: gourangaroy831@gmail.com
 
 ---
 
