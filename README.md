@@ -15,13 +15,18 @@ Welcome to my GitHub profile! I’m a passionate developer focused on building c
 ## 🛠️ Tools & Technologies
 
 ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![WordPress](https://img.shields.io/badge/-WordPress-21759B?style=flat&logo=wordpress&logoColor=white)
 ![Elementor](https://img.shields.io/badge/-Elementor-92003B?style=flat&logo=elementor&logoColor=white)
+![Elementor Pro](https://img.shields.io/badge/-Elementor_Pro-92003B?style=flat&logo=elementor&logoColor=white)
+![ACF](https://img.shields.io/badge/-ACF-00B0FF?style=flat&logo=wordpress&logoColor=white)
+![ACF Pro](https://img.shields.io/badge/-ACF_Pro-0D83CD?style=flat&logo=wordpress&logoColor=white)
 ![Laravel](https://img.shields.io/badge/-Laravel-F55247?style=flat&logo=laravel&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)
 
 ## 📂 My Portfolio
 
