@@ -679,7 +679,11 @@
             </div>
 
             <div class="rv-r" style="--d:.08s">
-              <form action="https://formspree.io/f/xyklagpp" method="POST" class="cf" id="cf" novalidate>
+              <!-- modify this form HTML and place wherever you want your form -->
+            <div data-fs-success>Thanks for your submission!</div>
+            <div data-fs-error>Oops! There was a problem submitting your form.</div>
+              
+              <form  class="cf" id="my-form" novalidate>
                 <div class="cf-title">// <span>NEW_MESSAGE</span></div>
                 <div class="cf-fields">
                   <div class="cf-row2">
@@ -732,6 +736,21 @@
 
     <!-- Js Files -->
     <script src="assets/js/script.js"></script>
+    
+    <!-- Place these scripts at the end of the body tag -->
+    <script>
+      window.formspree =
+        window.formspree ||
+        function () {
+          (formspree.q = formspree.q || []).push(arguments);
+        };
+      formspree("initForm", {
+        formElement: "#my-form",
+        formId: "xyklagpp",
+      });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    
   </body>
 
 </html>
