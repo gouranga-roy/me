@@ -748,6 +748,25 @@
         formElement: "#my-form",
         formId: "xyklagpp",
       });
+
+
+      // Disable Right Click
+      document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+      });
+      
+      // Disable DevTools Keyboard Shortcuts
+      document.addEventListener('keydown', function(e) {
+          if (e.keyCode == 123 || 
+              (e.ctrlKey && e.shiftKey && e.keyCode == 73) || 
+              (e.ctrlKey && e.shiftKey && e.keyCode == 74) || 
+              (e.ctrlKey && e.shiftKey && e.keyCode == 67) || 
+              (e.ctrlKey && e.keyCode == 85)) {
+              e.preventDefault();
+              return false;
+          }
+      });
+      
     </script>
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
     
