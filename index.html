@@ -750,156 +750,108 @@
       });
 
       // Disable Right Click
-      // document.addEventListener('contextmenu', function(e) {
-      //     e.preventDefault();
-      // });
+      document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+      });
       
-      // Disable DevTools Keyboard Shortcuts
-      // document.addEventListener('keydown', function(e) {
-      //     if (e.keyCode == 123 || 
-      //         (e.ctrlKey && e.shiftKey && e.keyCode == 73) || 
-      //         (e.ctrlKey && e.shiftKey && e.keyCode == 74) || 
-      //         (e.ctrlKey && e.shiftKey && e.keyCode == 67) || 
-      //         (e.ctrlKey && e.keyCode == 85)) {
-      //         e.preventDefault();
-      //         return false;
-      //     }
-      // });
+      Disable DevTools Keyboard Shortcuts
+      document.addEventListener('keydown', function(e) {
+          if (e.keyCode == 123 || 
+              (e.ctrlKey && e.shiftKey && e.keyCode == 73) || 
+              (e.ctrlKey && e.shiftKey && e.keyCode == 74) || 
+              (e.ctrlKey && e.shiftKey && e.keyCode == 67) || 
+              (e.ctrlKey && e.keyCode == 85)) {
+              e.preventDefault();
+              return false;
+          }
+      });
 
       // ============== DISABLE RIGHT CLICK ==============
-      // document.addEventListener('contextmenu', function(e) {
-      //     e.preventDefault();
-      // });
+      document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+      });
       
-      // // ============== DISABLE DEVTOOLS KEYBOARD SHORTCUTS ==============
-      // document.addEventListener('keydown', function(e) {
+      // ============== DISABLE DEVTOOLS KEYBOARD SHORTCUTS ==============
+      document.addEventListener('keydown', function(e) {
       
-      //     // F12
-      //     if (e.keyCode === 123) {
-      //         e.preventDefault();
-      //         return false;
-      //     }
-      
-         
-      //     if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-      //         e.preventDefault();
-      //         return false;
-      //     }
+          // F12
+          if (e.keyCode === 123) {
+              e.preventDefault();
+              return false;
+          }
       
          
-      //     if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
-      //         e.preventDefault();
-      //         return false;
-      //     }
+          if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+              e.preventDefault();
+              return false;
+          }
       
          
-      //     if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
-      //         e.preventDefault();
-      //         return false;
-      //     }
+          if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+              e.preventDefault();
+              return false;
+          }
       
          
-      //     if (e.ctrlKey && e.keyCode === 85) {
-      //         e.preventDefault();
-      //         return false;
-      //     }
+          if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
+              e.preventDefault();
+              return false;
+          }
       
          
-      //     if (e.ctrlKey && e.shiftKey && e.keyCode === 75) {
-      //         e.preventDefault();
-      //         return false;
-      //     }
+          if (e.ctrlKey && e.keyCode === 85) {
+              e.preventDefault();
+              return false;
+          }
       
          
-      //     if (e.ctrlKey && e.keyCode === 83) {
-      //         e.preventDefault();
-      //         return false;
-      //     }
-      // });
+          if (e.ctrlKey && e.shiftKey && e.keyCode === 75) {
+              e.preventDefault();
+              return false;
+          }
       
-      // // ============== DETECT IF DEVTOOLS IS OPENED ==============
-      // let devtoolsOpen = false;
-      // const threshold = 160; 
-      
-      // function detectDevTools() {
-      //     const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-      //     const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-      
-      //     if (widthThreshold || heightThreshold) {
-      //         if (!devtoolsOpen) {
-      //             devtoolsOpen = true;
-      //             triggerDevToolsAction();
-      //         }
-      //     } else {
-      //         devtoolsOpen = false;
-      //     }
-      // }
-      
-      // function triggerDevToolsAction() {
-      //     alert("Developer Tools are disabled on this website!");
-      //     window.location.href = "https://google.com";  
-      // }
-      
-      // // Check every 500ms
-      // setInterval(detectDevTools, 500);
-      
-      // // Extra detection using debugger trick (stronger detection)
-      // setInterval(() => {
-      //     const start = Date.now();
-      //     debugger;
-      //     const end = Date.now();
-      //     if (end - start > 100) {
-      //         triggerDevToolsAction();
-      //     }
-      // }, 1000);
-
-      // ============== FULL PROTECTION CODE ==============
-
-      document.addEventListener('contextmenu', e => e.preventDefault());
-      
-      document.addEventListener('keydown', e => {
-          if (
-              e.keyCode === 123 ||                          
-              (e.ctrlKey && e.shiftKey && e.keyCode === 73) || 
-              (e.ctrlKey && e.shiftKey && e.keyCode === 74) || 
-              (e.ctrlKey && e.shiftKey && e.keyCode === 67) || 
-              (e.ctrlKey && e.keyCode === 85) ||               
-              (e.ctrlKey && e.shiftKey && e.keyCode === 75) ||
-              (e.ctrlKey && e.keyCode === 83)                 
-          ) {
+         
+          if (e.ctrlKey && e.keyCode === 83) {
               e.preventDefault();
               return false;
           }
       });
       
-      // ============== DETECT DEVTOOLS OPEN ==============
-      let devtoolsDetected = false;
+      // ============== DETECT IF DEVTOOLS IS OPENED ==============
+      let devtoolsOpen = false;
+      const threshold = 160; 
       
-      function checkDevTools() {
-          const widthDiff = window.outerWidth - window.innerWidth > 150;
-          const heightDiff = window.outerHeight - window.innerHeight > 150;
+      function detectDevTools() {
+          const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+          const heightThreshold = window.outerHeight - window.innerHeight > threshold;
       
-          if ((widthDiff || heightDiff) && !devtoolsDetected) {
-              devtoolsDetected = true;
-              triggerAction();
+          if (widthThreshold || heightThreshold) {
+              if (!devtoolsOpen) {
+                  devtoolsOpen = true;
+                  triggerDevToolsAction();
+              }
+          } else {
+              devtoolsOpen = false;
           }
       }
       
-      function triggerAction() {
-          alert("Developer Tools are disabled!\nPlease close them to continue.");
-      
+      function triggerDevToolsAction() {
+          alert("Developer Tools are disabled on this website!");
+          window.location.href = "https://google.com";  
       }
       
-      setInterval(checkDevTools, 300);
+      // Check every 500ms
+      setInterval(detectDevTools, 500);
       
+      // Extra detection using debugger trick (stronger detection)
       setInterval(() => {
-          const before = performance.now();
+          const start = Date.now();
           debugger;
-          const after = performance.now();
-          if (after - before > 50) {
-              triggerAction();
+          const end = Date.now();
+          if (end - start > 100) {
+              triggerDevToolsAction();
           }
-      }, 800);
+      }, 1000);
       
     </script>
    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
