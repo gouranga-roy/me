@@ -836,7 +836,7 @@ body::after {
     overflow: hidden;
 }
 
-.about-photo::after {
+/* .about-photo::after {
     content: '[PHOTO]';
     position: absolute;
     bottom: .5rem;
@@ -848,7 +848,7 @@ body::after {
 
 .about-photo svg {
     opacity: .2
-}
+} */
 
 .about-card-info {
     display: grid;
